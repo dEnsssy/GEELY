@@ -5,12 +5,391 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>GEELY</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <!-- jquery -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            defer
+        ></script>
+        <!-- fancybox -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"
+            defer
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
+
         <script src="sctipt.js" defer></script>
         <link rel="shortcut icon" href="/img/ShortIcon.png" type="image/png" />
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="header container">
+            <h1>Модельный ряд GEELY</h1>
+            <nav class="filter">
+                <ul>
+                    <a href="#firstCar">
+                        <li>Atlas</li>
+                    </a>
+                    <a href="#secondCar">
+                        <li>Coolray</li>
+                    </a>
+                    <a href="#firstCar">
+                        <li>Emgrand</li>
+                    </a>
+                    <a href="#secondCar">
+                        <li>Tugella</li>
+                    </a>
+                    <a href="#thirdCar">
+                        <li>Atlas Pro</li>
+                    </a>
+                    <a href="#thirdCar">
+                        <li>Belgee x50</li>
+                    </a>
+                    <a href="#thirdCar">
+                        <li>Okavango</li>
+                    </a>
+                    <a href="#fourthCar">
+                        <li>Monjaro</li>
+                    </a>
+                    <a href="#fourthCar">
+                        <li>Tugella</li>
+                    </a>
+                    <a href="#fourthCar">
+                        <li>Coolray 2023</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main class="main container">
+            <div class="main__cards">
+                <div id="firstCar" class="main__cards-card main__cards-card1">
+                    <h2>GEELY MONJARO</h2>
+                    <h3>2 217 900 руб.</h3>
+                    <h4>от 1 217 900 руб.</h4>
+                    <h5>Платеж от 12 307 руб./мес.</h5>
+                    <div class="main__cards-card-btns">
+                        <button>Получить предложение</button>
+                        <button>Купить в кредит</button>
+                    </div>
+                    <div class="main__cards-card-list">
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list1"
+                        >
+                            <img
+                                src="./img/card/firstListIcon.png"
+                                alt="firstListIcon"
+                            />
+                            <p>КАСКО или комплект шин в подарок</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list2"
+                        >
+                            <img
+                                src="./img/card/secondListIcon.png"
+                                alt="secondListIcon"
+                            />
+                            <p>Первоначальный взнос от 0 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list3"
+                        >
+                            <img
+                                src="./img/card/thirdListIcon.png"
+                                alt="thirdListIcon"
+                            />
+                            <p>Бонус по трейд-ин до 300 000 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list4"
+                        >
+                            <img
+                                src="./img/card/fourthListIcon.png"
+                                alt="fourthListIcon"
+                            />
+                            <p>Гарантия 5 лет или 150 000 км</p>
+                        </div>
+                    </div>
+                    <img
+                        class="main__cards-card-car"
+                        src="./img/card/maneCar.png"
+                        alt=""
+                    />
+                    <div class="main__cards-card-colors">
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors1"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors2"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors3"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors4"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors5"
+                        ></div>
+                    </div>
+                    <div class="main__cards-card-mini">
+                        <!-- <a data-fancybox="qwe" href="./img/card/miniCar1.png"
+                            ><img src="./img/card/miniCar1.png" alt=""
+                        /></a> -->
+                        <img src="./img/card/miniCar1.png" alt="" />
+                        <img src="./img/card/miniCar2.png" alt="" />
+                        <img src="./img/card/miniCar3.png" alt="" />
+                        <img src="./img/card/miniCar4.png" alt="" />
+                    </div>
+                    <img
+                        class="main__cards-card-bg"
+                        src="./img/card/bgCar.png"
+                    />
+                </div>
+                <div id="secondCar" class="main__cards-card main__cards-card1">
+                    <h2>GEELY MONJARO</h2>
+                    <h3>2 217 900 руб.</h3>
+                    <h4>от 1 217 900 руб.</h4>
+                    <h5>Платеж от 12 307 руб./мес.</h5>
+                    <div class="main__cards-card-btns">
+                        <button>Получить предложение</button>
+                        <button>Купить в кредит</button>
+                    </div>
+                    <div class="main__cards-card-list">
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list1"
+                        >
+                            <img
+                                src="./img/card/firstListIcon.png"
+                                alt="firstListIcon"
+                            />
+                            <p>КАСКО или комплект шин в подарок</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list2"
+                        >
+                            <img
+                                src="./img/card/secondListIcon.png"
+                                alt="secondListIcon"
+                            />
+                            <p>Первоначальный взнос от 0 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list3"
+                        >
+                            <img
+                                src="./img/card/thirdListIcon.png"
+                                alt="thirdListIcon"
+                            />
+                            <p>Бонус по трейд-ин до 300 000 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list4"
+                        >
+                            <img
+                                src="./img/card/fourthListIcon.png"
+                                alt="fourthListIcon"
+                            />
+                            <p>Гарантия 5 лет или 150 000 км</p>
+                        </div>
+                    </div>
+                    <img
+                        class="main__cards-card-car"
+                        src="./img/card/maneCar.png"
+                        alt=""
+                    />
+                    <div class="main__cards-card-colors">
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors1"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors2"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors3"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors4"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors5"
+                        ></div>
+                    </div>
+                    <div class="main__cards-card-mini">
+                        <img src="./img/card/miniCar1.png" alt="" />
+                        <img src="./img/card/miniCar2.png" alt="" />
+                        <img src="./img/card/miniCar3.png" alt="" />
+                        <img src="./img/card/miniCar4.png" alt="" />
+                    </div>
+                    <img
+                        class="main__cards-card-bg"
+                        src="./img/card/bgCar.png"
+                    />
+                </div>
+                <div id="thirdCar" class="main__cards-card main__cards-card1">
+                    <h2>GEELY MONJARO</h2>
+                    <h3>2 217 900 руб.</h3>
+                    <h4>от 1 217 900 руб.</h4>
+                    <h5>Платеж от 12 307 руб./мес.</h5>
+                    <div class="main__cards-card-btns">
+                        <button>Получить предложение</button>
+                        <button>Купить в кредит</button>
+                    </div>
+                    <div class="main__cards-card-list">
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list1"
+                        >
+                            <img
+                                src="./img/card/firstListIcon.png"
+                                alt="firstListIcon"
+                            />
+                            <p>КАСКО или комплект шин в подарок</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list2"
+                        >
+                            <img
+                                src="./img/card/secondListIcon.png"
+                                alt="secondListIcon"
+                            />
+                            <p>Первоначальный взнос от 0 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list3"
+                        >
+                            <img
+                                src="./img/card/thirdListIcon.png"
+                                alt="thirdListIcon"
+                            />
+                            <p>Бонус по трейд-ин до 300 000 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list4"
+                        >
+                            <img
+                                src="./img/card/fourthListIcon.png"
+                                alt="fourthListIcon"
+                            />
+                            <p>Гарантия 5 лет или 150 000 км</p>
+                        </div>
+                    </div>
+                    <img
+                        class="main__cards-card-car"
+                        src="./img/card/maneCar.png"
+                        alt=""
+                    />
+                    <div class="main__cards-card-colors">
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors1"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors2"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors3"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors4"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors5"
+                        ></div>
+                    </div>
+                    <div class="main__cards-card-mini">
+                        <img src="./img/card/miniCar1.png" alt="" />
+                        <img src="./img/card/miniCar2.png" alt="" />
+                        <img src="./img/card/miniCar3.png" alt="" />
+                        <img src="./img/card/miniCar4.png" alt="" />
+                    </div>
+                    <img
+                        class="main__cards-card-bg"
+                        src="./img/card/bgCar.png"
+                    />
+                </div>
+                <div id="fourthCar" class="main__cards-card main__cards-card1">
+                    <h2>GEELY MONJARO</h2>
+                    <h3>2 217 900 руб.</h3>
+                    <h4>от 1 217 900 руб.</h4>
+                    <h5>Платеж от 12 307 руб./мес.</h5>
+                    <div class="main__cards-card-btns">
+                        <button>Получить предложение</button>
+                        <button>Купить в кредит</button>
+                    </div>
+                    <div class="main__cards-card-list">
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list1"
+                        >
+                            <img
+                                src="./img/card/firstListIcon.png"
+                                alt="firstListIcon"
+                            />
+                            <p>КАСКО или комплект шин в подарок</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list2"
+                        >
+                            <img
+                                src="./img/card/secondListIcon.png"
+                                alt="secondListIcon"
+                            />
+                            <p>Первоначальный взнос от 0 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list3"
+                        >
+                            <img
+                                src="./img/card/thirdListIcon.png"
+                                alt="thirdListIcon"
+                            />
+                            <p>Бонус по трейд-ин до 300 000 ₽</p>
+                        </div>
+                        <div
+                            class="main__cards-card-list-info main__cards-card-list4"
+                        >
+                            <img
+                                src="./img/card/fourthListIcon.png"
+                                alt="fourthListIcon"
+                            />
+                            <p>Гарантия 5 лет или 150 000 км</p>
+                        </div>
+                    </div>
+                    <img
+                        class="main__cards-card-car"
+                        src="./img/card/maneCar.png"
+                        alt=""
+                    />
+                    <div class="main__cards-card-colors">
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors1"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors2"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors3"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors4"
+                        ></div>
+                        <div
+                            class="main__cards-card-colors-info main__cards-card-colors5"
+                        ></div>
+                    </div>
+                    <div class="main__cards-card-mini">
+                        <img src="./img/card/miniCar1.png" alt="" />
+                        <img src="./img/card/miniCar2.png" alt="" />
+                        <img src="./img/card/miniCar3.png" alt="" />
+                        <img src="./img/card/miniCar4.png" alt="" />
+                    </div>
+                    <img
+                        class="main__cards-card-bg"
+                        src="./img/card/bgCar.png"
+                    />
+                </div>
+            </div>
+            <div class="main__more">
+                <button id="moreCars">ПОКАЗАТЬ ЕЩЕ</button>
+            </div>
+        </main>
     </body>
 </html>

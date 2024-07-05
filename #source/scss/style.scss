@@ -4,5 +4,207 @@
 //Fonts
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+//Vars
+@import "vars.scss";
+
+//Mixins
+@import "mixins.scss";
+
 .container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+body,
+html {
+    font-family: Inter;
+    color: $textColor;
+    scroll-behavior: smooth;
+}
+
+.header {
+    margin-top: 218px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    & h1 {
+        @include fontSW(40px, 700);
+    }
+    & ul {
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    & li {
+        padding: 5px;
+        border: 1px solid $maneColor;
+        box-shadow: 0px 4px 6px 0px $navShadow;
+    }
+    & a {
+        min-width: 180px;
+        min-height: 26px;
+        text-align: center;
+        @include fontSW(20px, 400);
+        color: $textColor;
+    }
+}
+.main {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        &-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            column-gap: 45px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-height: 373px;
+            padding: 25px;
+            border: 1px solid $bdCard;
+            box-shadow: 0px 4px 6px 0px $navShadow;
+
+            & h2 {
+                @include fontSW(40px, 700);
+                color: $maneColor;
+                margin-bottom: 32px;
+                line-height: 32px;
+            }
+            & h3 {
+                color: rgba(34, 34, 34, 0.5);
+                @include fontSW(32px, 400);
+                line-height: 36px;
+                text-decoration: line-through;
+                margin-bottom: 20px;
+            }
+            & h4 {
+                color: $textColor;
+                @include fontSW(40px, 700);
+                line-height: 36px;
+                margin-bottom: 20px;
+            }
+            & h5 {
+                color: $textColor;
+                @include fontSW(24px, 400);
+                line-height: 18px;
+                margin-bottom: 53px;
+            }
+            &-btns {
+                display: flex;
+                gap: 10px;
+                & button:first-child {
+                    background: $maneColor;
+                    color: white;
+                    padding: 21.5px 31.5px;
+                    @include fontSW(14px, 700);
+                }
+                & button:last-child {
+                    background: white;
+                    color: $maneColor;
+                    padding: 21.5px 63.5px;
+                    @include fontSW(14px, 500);
+                    border: 1px solid $maneColor;
+                }
+            }
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 46px;
+                margin-top: 19px;
+                &-info {
+                    display: flex;
+                    gap: 18px;
+                    align-items: flex-start;
+                    @include fontSW(16px, 700);
+                    color: $textColor;
+                }
+                &1 {
+                    & p {
+                        max-width: 182px;
+                    }
+                }
+                &2 {
+                    & p {
+                        max-width: 150px;
+                    }
+                }
+                &3 {
+                    & p {
+                        max-width: 149px;
+                    }
+                }
+                &4 {
+                    & p {
+                        max-width: 127px;
+                    }
+                }
+            }
+            &-car {
+                margin-top: 8px;
+            }
+            &-colors {
+                margin-left: 80px;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-bottom: 15px;
+                &-info {
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                }
+                &1 {
+                    background: $carColor1;
+                }
+                &2 {
+                    background: $carColor2;
+                }
+                &3 {
+                    background: $carColor3;
+                }
+                &4 {
+                    background: $carColor4;
+                }
+                &5 {
+                    border: 1px solid $carColor4;
+                }
+            }
+            &-mini {
+                display: flex;
+                gap: 11px;
+                margin-left: -70px;
+                & img {
+                    cursor: pointer;
+                }
+            }
+            &-bg {
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                z-index: -1;
+            }
+        }
+    }
+    &__more {
+        & button {
+            background: none;
+            color: $maneColor;
+            @include fontSW(16px, 400);
+            line-height: 32px;
+            text-decoration-line: underline;
+        }
+    }
 }
