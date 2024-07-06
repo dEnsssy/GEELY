@@ -510,7 +510,13 @@ html {
     font-size: 24px;
     font-weight: 700;
   }
+  .header nav {
+    width: 100%;
+  }
   .header ul {
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

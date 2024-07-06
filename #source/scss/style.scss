@@ -369,7 +369,12 @@ html {
         & h1 {
             @include fontSW(24px, 700);
         }
+        & nav{
+            width: 100%;
+        }
         & ul {
+            align-content: space-between;
+            width: 100%;
             flex-direction: column;
             height: 270px;
             gap: 20px;
