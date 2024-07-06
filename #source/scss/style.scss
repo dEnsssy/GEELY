@@ -52,6 +52,7 @@ html {
         text-align: center;
         @include fontSW(20px, 400);
         color: $textColor;
+        line-height: 130%;
     }
 }
 .main {
@@ -129,7 +130,26 @@ html {
                     gap: 18px;
                     align-items: flex-start;
                     @include fontSW(16px, 700);
+                    line-height: 120%;
                     color: $textColor;
+                    &-img {
+                        width: 34px;
+                        height: 34px;
+                    }
+                    &-img1 {
+                        background: url("/img/card/firstListIcon.png") no-repeat;
+                    }
+                    &-img2 {
+                        background: url("/img/card/secondListIcon.png")
+                            no-repeat;
+                    }
+                    &-img3 {
+                        background: url("/img/card/thirdListIcon.png") no-repeat;
+                    }
+                    &-img4 {
+                        background: url("/img/card/fourthListIcon.png")
+                            no-repeat;
+                    }
                 }
                 &1 {
                     & p {
@@ -154,6 +174,9 @@ html {
             }
             &-car {
                 margin-top: 8px;
+                width: 298px;
+                height: 218px;
+                background: url("/img/card/maneCar.png") no-repeat;
             }
             &-colors {
                 margin-left: 80px;
@@ -186,11 +209,30 @@ html {
                 display: flex;
                 gap: 11px;
                 margin-left: -70px;
-                & img {
+                &-img {
+                    width: 88.104px;
+                    height: 59px;
+                }
+                &-1 {
+                    background: url("/img/card/miniCar1.png") no-repeat;
+                }
+                &-2 {
+                    background: url("/img/card/miniCar2.png") no-repeat;
+                }
+                &-3 {
+                    background: url("/img/card/miniCar3.png") no-repeat;
+                }
+                &-4 {
+                    background: url("/img/card/miniCar4.png") no-repeat;
+                }
+                & div {
                     cursor: pointer;
                 }
             }
             &-bg {
+                width: 615.738px;
+                height: 204px;
+                background: url("/img/card/bgCar.png") no-repeat;
                 position: absolute;
                 top: 25px;
                 right: 25px;
@@ -209,13 +251,290 @@ html {
     }
 }
 @media (max-width: 1919px) {
-    body {
-        background: red;
+    .container {
+        max-width: 962px;
+    }
+    .header {
+        margin-bottom: 60px;
+        gap: 30px;
+        & h1 {
+            @include fontSW(36px, 700);
+        }
+        & ul {
+            max-width: 962px;
+            justify-content: space-between;
+            gap: 19px;
+        }
+        & a {
+            min-width: 168px;
+        }
+    }
+    .main {
+        padding-bottom: 41px;
+        gap: 30px;
+        &__cards {
+            gap: 30px;
+            &-card {
+                column-gap: 30px;
+                max-height: 332px;
+                padding: 12px;
+                & h2 {
+                    margin-top: 22px;
+                    @include fontSW(32px, 700);
+                    margin-bottom: 20px;
+                }
+                & h3 {
+                    @include fontSW(24px, 400);
+                }
+                & h4 {
+                    @include fontSW(36px, 700);
+                }
+                & h5 {
+                    @include fontSW(20px, 400);
+                    margin-bottom: 43px;
+                }
+                &-btns {
+                    & button:first-child {
+                        padding: 16.5px 5.5px;
+                    }
+                    & button:last-child {
+                        padding: 16.5px 33.5px;
+                    }
+                }
+                &-list {
+                    gap: 32px;
+                    margin-top: 68px;
+                    &-info {
+                        @include fontSW(14px, 700);
+                        &-img {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                &-car {
+                    margin-left: -50px;
+                    margin-top: 27px;
+                    width: 322.478px;
+                    height: 180px;
+                    background: url("/img/secondResol/maneCar.png") no-repeat;
+                }
+                &-colors {
+                    margin-top: 12px;
+                    margin-left: 30px;
+                    margin-bottom: 27px;
+                }
+                &-mini {
+                    gap: 7px;
+                    margin-left: -27px;
+                    &-img {
+                        width: 67.859px;
+                        height: 45px;
+                    }
+                    &-1 {
+                        background: url("/img/secondResol/miniCar1.png")
+                            no-repeat;
+                    }
+                    &-2 {
+                        background: url("/img/secondResol/miniCar2.png")
+                            no-repeat;
+                    }
+                    &-3 {
+                        background: url("/img/secondResol/miniCar3.png")
+                            no-repeat;
+                    }
+                    &-4 {
+                        background: url("/img/secondResol/miniCar4.png")
+                            no-repeat;
+                    }
+                }
+                &-bg {
+                    width: 495.969px;
+                    height: 204px;
+                    background: url("/img/secondResol/carBg.png") no-repeat;
+                    top: 12px;
+                    right: 12px;
+                }
+            }
+        }
     }
 }
-@media (max-width: 1024px) {
-    body {
-        
+@media (max-width: 1023px) {
+    .container {
+        max-width: 320px;
+    }
+    .header {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        gap: 20px;
+        & h1 {
+            @include fontSW(24px, 700);
+        }
+        & ul {
+            flex-direction: column;
+            height: 270px;
+            gap: 20px;
+        }
+        & a {
+            min-width: 140px;
+            min-height: 21px;
+            @include fontSW(16px, 400);
+        }
+    }
+    .main {
+        padding-bottom: 30px;
+        gap: 20px;
+        &__cards {
+            gap: 30px;
+            &-card {
+                column-gap: 0;
+                max-height: 610px;
+                padding: 5px 13px;
+                flex-direction: row;
+                & h2 {
+                    @include fontSW(20px, 700);
+                    margin-bottom: 11px;
+                    order: 1;
+                    margin-top: 0;
+                }
+                & h3 {
+                    order: 5;
+                    margin-top: 15px;
+                    @include fontSW(16px, 400);
+                    margin-bottom: 5px;
+                }
+                & h4 {
+                    order: 6;
+                    @include fontSW(24px, 700);
+                    margin-bottom: 5px;
+                }
+                & h5 {
+                    order: 7;
+                    @include fontSW(16px, 400);
+                    margin-bottom: 25px;
+                }
+                &-btns {
+                    order: 9;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    & button:first-child {
+                        padding: 12.5px 67.5px;
+                        @include fontSW(12px, 700);
+                    }
+                    & button:last-child {
+                        padding: 12.5px 91.5px;
+                        @include fontSW(12px, 700);
+                    }
+                }
+                &-list {
+                    order: 8;
+                    margin-top: 0;
+                    flex-wrap: wrap;
+                    max-height: 65px;
+                    gap: 14px;
+                    margin-bottom: 21px;
+                    &-info {
+                        @include fontSW(9px, 400);
+                        gap: 7px;
+                        &-img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                        &-img1 {
+                            background: url("/img/thirdResol/list1.png")
+                                no-repeat;
+                        }
+                        &-img2 {
+                            background: url("/img/thirdResol/list2.png")
+                                no-repeat;
+                        }
+                        &-img3 {
+                            background: url("/img/thirdResol/list3.png")
+                                no-repeat;
+                        }
+                        &-img4 {
+                            background: url("/img/thirdResol/list4.png")
+                                no-repeat;
+                        }
+                    }
+                    &1 {
+                        & p {
+                            margin-top: 1px;
+                            max-width: 95px;
+                        }
+                    }
+                    &2 {
+                        & p {
+                            margin-top: 1px;
+                            max-width: 95px;
+                        }
+                    }
+                    &3 {
+                        & p {
+                            margin-top: 1px;
+                            max-width: 95px;
+                        }
+                    }
+                    &4 {
+                        & p {
+                            margin-top: 1px;
+                            max-width: 80px;
+                        }
+                    }
+                }
+                &-car {
+                    order: 2;
+                    width: 257px;
+                    height: 150px;
+                    background: url("/img/thirdResol/maneCar.png") no-repeat;
+                    margin-left: 22px;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+                &-colors {
+                    order: 4;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    margin: 0 auto;
+                    &-info {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                &-mini {
+                    order: 3;
+                    margin-left: 0;
+                    gap: 16px;
+                    margin-bottom: 16px;
+                    &-img {
+                        width: 62px;
+                        height: 39px;
+                    }
+                    &-1 {
+                        background: url("/img/thirdResol/miniCar1.png")
+                            no-repeat;
+                    }
+                    &-2 {
+                        background: url("/img/thirdResol/miniCar2.png")
+                            no-repeat;
+                    }
+                    &-3 {
+                        background: url("/img/thirdResol/miniCar3.png")
+                            no-repeat;
+                    }
+                    &-4 {
+                        background: url("/img/thirdResol/miniCar4.png")
+                            no-repeat;
+                    }
+                }
+                &-bg {
+                    width: 320px;
+                    height: 186.977px;
+                    background: url("/img/thirdResol/carBg.png") no-repeat;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
     }
 }
-
