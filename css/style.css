@@ -536,7 +536,7 @@ html {
        -moz-column-gap: 0;
             column-gap: 0;
     max-height: 610px;
-    padding: 5px 13px;
+    padding: 5px 12px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

@@ -388,7 +388,7 @@ html {
             &-card {
                 column-gap: 0;
                 max-height: 610px;
-                padding: 5px 13px;
+                padding: 5px 12px;
                 flex-direction: row;
                 & h2 {
                     @include fontSW(20px, 700);
