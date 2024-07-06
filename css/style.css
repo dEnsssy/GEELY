@@ -344,3 +344,9 @@ html {
   line-height: 32px;
   text-decoration-line: underline;
 }
+
+@media (max-width: 1919px) {
+  body {
+    background: red;
+  }
+}
